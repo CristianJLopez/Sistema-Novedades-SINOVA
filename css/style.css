@@ -26,7 +26,8 @@ img{
 }
 
 .navbar-default .navbar-brand {
-    color: #ff6b00;
+    color: black;
+    float: right;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -116,7 +117,7 @@ img{
     color: #333333;
 }
 
-.breadcrumb a {
+.breadcrumb p {
     color: #333333;
 }
 
@@ -158,4 +159,8 @@ img{
         color: #ffbbbc;
         background-color: #c0392b;
     }
+}
+#funcionario{
+    color: rgb(59, 58, 58);
+    margin-top: 10%;
 }
