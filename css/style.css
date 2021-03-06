@@ -108,6 +108,10 @@ img{
     padding-top: 20px;
     color: #333333;
 }
+#funcionario{
+    margin-top: 10%;
+    color: #fff;
+}
 
 
 /*BREADCRUMB*/
@@ -160,7 +164,4 @@ img{
         background-color: #c0392b;
     }
 }
-#funcionario{
-    color: rgb(59, 58, 58);
-    margin-top: 10%;
-}
+

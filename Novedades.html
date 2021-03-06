@@ -21,11 +21,11 @@
     <header id="header">
         <div class="container">
             <div class="row">
-                <div class="col-md-10">
-                    <h1><img src="images/logoblanco.png" id="imglogo" alt="Logo SENA"></span> SINOVA <small>Gestión de Novedades</small></h1>
+                <div class="col-md-8">
+                    <h1 onclick="botonInicio()"><img src="images/logoblanco.png" id="imglogo" alt="Logo SENA"></span> SINOVA <small>Gestión de Novedades</small></h1>
                 </div>
-                <div class="col-md-2">
-                    
+                <div class="col-md-4 text-left">
+                    <h5 id="funcionario">Funcionario(a): Nestor Rodriguez</h5>
                 </div>
             </div>
         </div>
@@ -41,21 +41,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <div class="list-group">
-                        <a href="inicio.html" class="list-group-item "><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Inicio </a>
-                        <a href="Novedades.html" class="list-group-item active main-color-bg"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Novedades <span class="badge"></span></a>
-                        <a href="Aprendices.html" class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Aprendices <span class="badge"></span></a>
-                    </div>
-                    <div class="well">
-                        <h4>Aprendices con proceso académico</h4>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 22%;">22%</div>
-                        </div>
-                        <h4>Aprendices con proceso disciplinario</h4>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 39%;">39%</div>
-                        </div>
-                    </div>
+                    <div class="well" >
+                        <a class="twitter-timeline" data-width="280" data-height="400" href="https://twitter.com/SENAComunica?ref_src=twsrc%5Etfw">Tweets by SENAComunica</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div> 
                 </div>
                 <div class="col-md-9">
                     <div class="panel panel-default">
@@ -65,31 +53,31 @@
                         <div class="panel-body">
                             <form action="">
                                 <div class="form-group">
-                                    <label>Nombre Aprendiz</label>
-                                    <input type="text" class="form-control" placeholder="Nombre y apellido">
+                                    <label>Asunto novedad</label>
+                                    <input type="text" class="form-control" placeholder="Describa la novedad en maximo 5 palabras">
                                 </div>
                                 <div class="form-group">
                                     <label>Descripción Novedad</label>
-                                    <textarea name="editor1" type="text" class="form-control" placeholder="Describa los hechos"> 
-                                    </textarea>
+                                    <textarea type="text" class="form-control" placeholder="Describa los hechos en maximo 500 palabras"></textarea>
                                 </div>
                                 <div class="form-group">
                                     <label>
-                                        <input type="checkbox" checked> Academica  
-                                        <input type="checkbox" checked> Disciplinaria                                     
+                                        <input type="checkbox" > Academica  
+                                        <input type="checkbox" > Disciplinaria                                     
                                     </label>
                                 </div>
                                 <div class="form-group">
-                                    <label>Número de Ficha</label>
-                                    <input type="text" class="form-control" placeholder="">
+                                    <label for="fecha">Fecha</label>
+                                    <input type="date" class="form-control">
                                 </div>
 
                                 <div class="form-group">
-                                    <label>Observaciones adicionales</label>
-                                    <input type="text" class="form-control" placeholder="">
+                                    <label for="adjuntarArchivo">Adjuntar archivo</label>
+                                    <input type="file" id="adjuntarArchivo">
+                                    <p class="help-block">Recomendado en formato PDF</p>
                                 </div>
                             </form>
-                            <input type="submit" class="btn btn-default" value="Guardar Cambios">
+                            <input type="submit" class="btn btn-info" value="He terminado!">
                         </div>
                     </div>
                 </div>
@@ -101,6 +89,7 @@
         <p>Copyright SINAK, &copy; 2020</p>
     </footer>
     <script src="js/bootstrap.min.js"></script>
+    <script src="botones.js"></script>
 </body>
 
 </html>
