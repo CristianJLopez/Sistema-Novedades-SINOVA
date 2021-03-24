@@ -5,8 +5,11 @@ function botonInicio(){
 	location.href="inicio.html"
 }
 function terminaNovedad(){
-	alert("Novedad subida con exito \nId novedad: 0022")
-	location.href="inicio.html"
+	
+	if (window.confirm("Confirma subir la novedad?")) {
+		alert("Novedad subida con exito!\nID novedad: 11107")
+		window.open("inicio.html");
+	  }
 }
 function descargar(){
 	alert("Contenido descargado con exito")
