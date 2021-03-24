@@ -12,9 +12,11 @@ function login(){ //COMPRUEBA CORREOS INTEGRANTES GRUPO
 		|| user1.correo == "icruiz73@misena.edu.co" && user1.pw == "1234")  {
 		location.href="inicio.html"	
 	}
-	else{
-		alert("Informacion incorrecta \nPor favor verifique sus datos")
+	else if (user1.correo == "superadmin@misena.edu.co" && user1.pw == "0000") {
+		location.href="AreaAdministrativa.html"
 		
+	}else{
+		alert("Informacion incorrecta \nPor favor verifique sus datos")
 	}
 }
 function recuperar(){ // RECUPERAR CONTRASEÑA

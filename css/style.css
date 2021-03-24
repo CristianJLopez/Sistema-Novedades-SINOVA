@@ -6,6 +6,12 @@ img{
     width: 5%;
     float: left;
 }
+.image-upload>input {
+    display: none;
+  }
+#imgcsv{
+    width: 50%;
+}
 .navbar {
     min-height: 33px !important;
     margin-bottom: 0;
