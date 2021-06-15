@@ -8,7 +8,7 @@ function botonCrearUsuario(){
 	location.href="crearUsuario.html"
 }
 function botonCancelarCrearUsuario(){
-	location.href="areaAdministrativa.html"
+	location.href="AreaAdministrativa.html"
 }
 function terminaNovedad(){
 	
@@ -25,6 +25,6 @@ function terminaCrearUsuario(){
 	
 	if (window.confirm("Confirma crear el usuario?")) {
 		alert("Usuario creado correctamente!\nID transaccion: 11107")
-		window.open("areaAdministrativa.html");
+		window.open("AreaAdministrativa.html");
 	  }
 }
