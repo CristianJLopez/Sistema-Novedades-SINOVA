@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Crear Usuario</title>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            
+                <div class="navbar-right">
+                    <a href="index.html" class="navbar-brand">Cerrar sesion</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center"> SINOVA <small>Crear Usuario</small></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <form id="login" name="formulario" class="well">
+                        <div class="form-group">
+                            <label for="">Email</label>
+                            <input type="text" class="form-control" placeholder="Digite correo SENA" id="correo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Nombre y apellido</label>
+                            <input type="text" class="form-control" placeholder="" id="nombres" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Rol</label><br>
+                            <select name="Rol" required >
+                                <option value="" disabled="disabled" selected="true">Elija Uno</option>
+                                <option value="value1">Administrativo</option>
+                                <option value="value2">Instructor</option>
+                                <option value="value3">SuperAdmin</option>
+                            </select>
+                        </div>
+                        <input type="button" class="btn btn-success btn-block" value="Crear" onclick="terminaCrearUsuario()">
+                        <input type="button" class="btn btn-danger btn-block" value="Cancelar" onclick="botonCancelarCrearUsuario()">
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <p>Copyright SINAK, &copy; 2020</p>
+    </footer>
+    <script src="botones.js"></script>
+</body>
+</html>

@@ -4,6 +4,12 @@ function botonAprendices(){
 function botonInicio(){
 	location.href="inicio.html"
 }
+function botonCrearUsuario(){
+	location.href="crearUsuario.html"
+}
+function botonCancelarCrearUsuario(){
+	location.href="areaAdministrativa.html"
+}
 function terminaNovedad(){
 	
 	if (window.confirm("Confirma subir la novedad?")) {
@@ -14,4 +20,11 @@ function terminaNovedad(){
 function descargar(){
 	alert("Contenido descargado con exito")
 	location.href="inicio.html"
+}
+function terminaCrearUsuario(){
+	
+	if (window.confirm("Confirma crear el usuario?")) {
+		alert("Usuario creado correctamente!\nID transaccion: 11107")
+		window.open("areaAdministrativa.html");
+	  }
 }
