@@ -50,7 +50,7 @@
                         <div class="panel-heading main-color-bg">
                             <h3 class="panel-title">ANALISIS Y DESARROLLO DE SISTEMAS DE INFORMACION (1964701)</h3>
                         </div>
-                        <div class="panel-body">
+                        <div class="panel-body" id="app">
                             <div class="row">
                                 <div class="col-md-12">
                                     <input type="text" class="form-control" placeholder="Buscar...">
@@ -65,47 +65,15 @@
                                     <th></th>
                                     <th></th>
                                 </tr>
-                                <tr>
-                                    <td>Cristian López</td>
-                                    <td>CC</td>
-                                    <td>1030640906</td>
-                                    <td>cjlopez60@misena.edu.co</td>
+                                <tr v-for="aprendiz in aprendices">
+                                    <td>{{aprendiz.name}}</td>
+                                    <td>{{aprendiz.tipodoc}}</td>
+                                    <td>{{aprendiz.id}}</td>
+                                    <td>{{aprendiz.email}}</td>
                                     <td><a href="Novedades.html" class="btn btn-success">Agregar</a></td>
                                     <td><a href="historial.html" class="btn btn-primary">Ver historial</a></td>
                                 </tr>
-                                <tr>
-                                    <td>Ingrid Ruiz</td>
-                                    <td>CC</td>
-                                    <td>1022985837</td>
-                                    <td>icruiz73@misena.edu.co</td>
-                                    <td><a href="Novedades.html" class="btn btn-success">Agregar</a></td>
-                                    <td><a href="historial.html" class="btn btn-primary">Ver historial</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Jhon Alexander Romero Betancourt</td>
-                                    <td>CC</td>
-                                    <td>1022334473</td>
-                                    <td>jaromero374@misena.edu.co</td>
-                                    <td><a href="Novedades.html" class="btn btn-success">Agregar</a></td>
-                                    <td><a href="historial.html" class="btn btn-primary">Ver historial</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Jose Ramirez</td>
-                                    <td>CC</td>
-                                    <td>1033735789</td>
-                                    <td>jframirez78@misena.edu.co</td>
-                                    <td><a href="Novedades.html" class="btn btn-success">Agregar</a></td>
-                                    <td><a href="historial.html" class="btn btn-primary">Ver historial</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Andrey Chacon Cespedes</td>
-                                    <td>CC</td>
-                                    <td>1033730164</td>
-                                    <td>yandre1@misena.edu.co</td>
-                                    <td><a href="Novedades.html" class="btn btn-success">Agregar</a></td>
-                                    <td><a href="historial.html" class="btn btn-primary">Ver historial</a></td>
-                                    </td>
-                                </tr>
+                    
                             </table>
                         </div>
                     </div>
@@ -117,6 +85,9 @@
     <footer id="footer">
         <p>Copyright SINAK, &copy; 2020</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="vueaprendices.js"></script>
     <script src="botones.js"></script>
 </body>
 
