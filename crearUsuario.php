@@ -13,7 +13,7 @@
         <div class="container">
             
                 <div class="navbar-right">
-                    <a href="index.html" class="navbar-brand">Cerrar sesion</a>
+                    <a href="index.php" class="navbar-brand">Cerrar sesion</a>
                 </div>
             </div>
         </div>
@@ -31,25 +31,29 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-md-offset-4">
-                    <form id="login" name="formulario" class="well">
+                    <form name="formulario" class="well" action="php/insertar.php" method="POST">
                         <div class="form-group">
                             <label for="">Email</label>
-                            <input type="text" class="form-control" placeholder="Digite correo SENA" id="correo" required>
+                            <input type="text" class="form-control" placeholder="Digite correo SENA" id="correo" name="correo" required>
                         </div>
                         <div class="form-group">
                             <label for="">Nombre y apellido</label>
-                            <input type="text" class="form-control" placeholder="" id="nombres" required>
+                            <input type="text" class="form-control" placeholder="" id="nombre" name="nombre" required>
                         </div>
                         <div class="form-group">
-                            <label for="">Rol</label><br>
-                            <select name="Rol" required >
+                            <label >Rol</label><br>
+                            <select name="rol" required >
                                 <option value="" disabled="disabled" selected="true">Elija Uno</option>
-                                <option value="value1">Administrativo</option>
-                                <option value="value2">Instructor</option>
-                                <option value="value3">SuperAdmin</option>
+                                <option value="Administrativo">Administrativo</option>
+                                <option value="Instructor">Instructor</option>
+                                <option value="SuperAdmin">SuperAdmin</option>
                             </select>
                         </div>
-                        <input type="button" class="btn btn-success btn-block" value="Crear" onclick="terminaCrearUsuario()">
+                        <div class="form-group">
+                            <label for="">Password</label>
+                            <input type="password" class="form-control"name="passw" required>
+                        </div>
+                        <button type="submit" class="btn btn-success btn-block" value="Crear">Crear</button>
                         <input type="button" class="btn btn-danger btn-block" value="Cancelar" onclick="botonCancelarCrearUsuario()">
                     </form>
                     

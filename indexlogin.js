@@ -1,4 +1,4 @@
-function login(){ //COMPRUEBA CORREOS INTEGRANTES GRUPO
+/*function login(){ //COMPRUEBA CORREOS INTEGRANTES GRUPO
 	let correo = document.formulario.correo.value
 	let pw = document.formulario.psw.value
 	let user1 = {
@@ -18,7 +18,17 @@ function login(){ //COMPRUEBA CORREOS INTEGRANTES GRUPO
 	}else{
 		alert("Informacion incorrecta \nPor favor verifique sus datos")
 	}
+}*/
+function login(){
+	let correo = document.formularioo.correoo.value
+	let expr = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/
+	if ( !expr.test(correo) ){    //COMPRUEBA QUE SEA TIPO EMAIL
+		alert("Error: La dirección de correo " + correo + " es incorrecta.");
+		return false;
+	}
 }
+
+
 function recuperar(){ // RECUPERAR CONTRASEÑA
 	let correo = document.formularioo.correoo.value
 	let identificacion = document.formularioo.identificacion.value 
@@ -35,6 +45,6 @@ function recuperar(){ // RECUPERAR CONTRASEÑA
 	}
 	else{
 		alert("Sus nuevas credenciales se enviaron exitosamente, por favor revise su email")
-		location.href="index.html"
+		location.href="index.php"
 	}
 }
