@@ -1,4 +1,10 @@
-
+.ocultar {
+    display: none;
+}
+ 
+.mostrar {
+    display: block;
+}
 body {
     background: #f4f4f4;
 }
@@ -10,10 +16,10 @@ img{
     display: none;
   }
 #imgcsv{
-    width: 50%;
+    width: 10rem;
 }
 #imguser{
-    width: 20%;
+    width: 10rem;
 }
 .navbar {
     min-height: 33px !important;

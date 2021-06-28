@@ -47,17 +47,19 @@
                  </script>";
         }*/
         if ($usuario['rol'] == 'SuperAdmin') {
+            
             $_SESSION['usuario'] = $usuario;
-
             header("Location:../AreaAdministrativa.html");
 
-        } else if($usuario['rol'] == 'Instructor'){
+        }else if($usuario['rol'] == 'Instructor'){
 
             $_SESSION['usuario'] = $usuario;
             header("Location:../inicio.html");
+
         }else if($usuario['rol'] == 'Administrativo'){
             $_SESSION['usuario'] = $usuario;
             header("Location:../inicio.html");
+
         }else{
             echo"<script>alert('Datos incorrectos, intente de nuevo');
                  window.location= '../index.php';

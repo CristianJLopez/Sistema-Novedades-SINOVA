@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="utf-8">
-    <title>SINOVA | Login</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <title>SINOVA | Login</title>
 </head>
 
 <body>
@@ -32,7 +34,7 @@
                     <form action="php/login.php" id="login" name="formulario" class="well" method="POST">
                         <div class="form-group">
                             <label for="">Email</label>
-                            <input type="text" class="form-control" placeholder="Digite correo SENA" id="correo" name="correo" required>
+                            <input type="email" class="form-control" placeholder="Digite correo SENA" id="correo" name="correo" required>
                         </div>
                         <div class="form-group">
                             <label for="">Contraseña</label>

@@ -25,3 +25,5 @@ function terminaCrearUsuario(){
 		location.href="AreaAdministrativa.html"
 	  }
 }
+
+

@@ -34,7 +34,7 @@
                     <form name="formulario" class="well" action="php/insertar.php" method="POST">
                         <div class="form-group">
                             <label for="">Email</label>
-                            <input type="text" class="form-control" placeholder="Digite correo SENA" id="correo" name="correo" required>
+                            <input type="email" class="form-control" placeholder="Digite correo SENA" id="correo" name="correo" required>
                         </div>
                         <div class="form-group">
                             <label for="">Nombre y apellido</label>
@@ -50,11 +50,14 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="">Password</label>
+                            <label for="">Contraseña</label>
                             <input type="password" class="form-control"name="passw" required>
+                            <label for="">Repita contraseña</label>
+                            <input type="password" class="form-control"name="passw2" required>
                         </div>
-                        <button type="submit" class="btn btn-success btn-block" value="Crear">Crear</button>
+                        <button type="submit" class="btn btn-success btn-block" value="Crear" id="login" >Crear</button>
                         <input type="button" class="btn btn-danger btn-block" value="Cancelar" onclick="botonCancelarCrearUsuario()">
+                        
                     </form>
                     
                 </div>
