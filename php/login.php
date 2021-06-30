@@ -32,12 +32,13 @@
         $passw= $_POST['passw'];
         $securepassw= sha1($passw);
         $base_de_datos->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $query= $base_de_datos->prepare("SELECT * FROM users WHERE correo = :correo AND passw = :passw");
+        $query= $base_de_datos->prepare("SELECT * FROM Usuarios WHERE Correo = :correo AND Contraseña = :passw");
         $query->bindParam(":correo", $correo);
         $query->bindParam(":passw", $securepassw);
         $query->execute();
         $usuario = $query->fetch(PDO::FETCH_ASSOC);
-
+        echo"Query ejecutado";
+        
         /*if($usuario==true){
             $_SESSION["usuario"] = $usuario["correo"];
             header("Location: ../inicio.html" );
@@ -46,17 +47,17 @@
                  window.location= '../index.php';
                  </script>";
         }*/
-        if ($usuario['rol'] == 'SuperAdmin') {
+        if ($usuario['TipoUsuario'] == 3) {
             
             $_SESSION['usuario'] = $usuario;
             header("Location:../AreaAdministrativa.html");
 
-        }else if($usuario['rol'] == 'Instructor'){
+        }else if($usuario['TipoUsuario'] == 2){
 
             $_SESSION['usuario'] = $usuario;
             header("Location:../inicio.html");
 
-        }else if($usuario['rol'] == 'Administrativo'){
+        }else if($usuario['TipoUsuario'] == 1){
             $_SESSION['usuario'] = $usuario;
             header("Location:../inicio.html");
 

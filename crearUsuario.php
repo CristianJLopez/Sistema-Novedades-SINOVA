@@ -1,3 +1,5 @@
+<?php session_start();?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,14 +41,18 @@
                         <div class="form-group">
                             <label for="">Nombre y apellido</label>
                             <input type="text" class="form-control" placeholder="" id="nombre" name="nombre" required>
+                            <label for="">Numero de identificacion</label>
+                            <input type="number" class="form-control" placeholder="" id="nidentificacion" name="nidentificacion" required>
+                            <label for="">Celular</label>
+                            <input type="number" class="form-control" placeholder="" id="celular" name="celular" required>
                         </div>
                         <div class="form-group">
                             <label >Rol</label><br>
                             <select name="rol" required >
                                 <option value="" disabled="disabled" selected="true">Elija Uno</option>
-                                <option value="Administrativo">Administrativo</option>
-                                <option value="Instructor">Instructor</option>
-                                <option value="SuperAdmin">SuperAdmin</option>
+                                <option value=1>Administrativo</option>
+                                <option value=2>Instructor</option>
+                                <option value=3>SuperAdmin</option>
                             </select>
                         </div>
                         <div class="form-group">
