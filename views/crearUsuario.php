@@ -50,8 +50,8 @@
                             <label >Rol</label><br>
                             <select name="rol" required >
                                 <option value="" disabled="disabled" selected="true">Elija Uno</option>
-                                <option value=1>Administrativo</option>
-                                <option value=2>Instructor</option>
+                                <option value=1>Instructor</option>
+                                <option value=2>Administrativo</option>
                                 <option value=3>SuperAdmin</option>
                             </select>
                         </div>
@@ -61,7 +61,7 @@
                             <label for="">Repita contraseña</label>
                             <input type="password" class="form-control"name="passw2" required>
                         </div>
-                        <button type="submit" class="btn btn-success btn-block" value="Crear" id="crear" >Crear</button>
+                        <button type="submit" class="btn btn-success btn-block" value="Crear" id="crear" onclick="comprobarClave()" >Crear</button>
                         <input type="button" class="btn btn-danger btn-block" value="Cancelar" onclick="botonCancelarCrearUsuario()">
                         
                     </form>
@@ -75,5 +75,6 @@
         <p>Copyright SINAK, &copy; 2020</p>
     </footer>
     <script src="../js/botones.js"></script>
+    <script src="../js/comprobarPw.js"></script>
 </body>
 </html>
