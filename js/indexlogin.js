@@ -18,7 +18,7 @@
 	}else{
 		alert("Informacion incorrecta \nPor favor verifique sus datos")
 	}
-}*/
+}
 function login(){
 	let correo = document.formularioo.correoo.value
 	let expr = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/
@@ -26,7 +26,7 @@ function login(){
 		alert("Error: La dirección de correo " + correo + " es incorrecta.");
 		return false;
 	}
-}
+}*/
 
 
 function recuperar(){ // RECUPERAR CONTRASEÑA
@@ -44,7 +44,7 @@ function recuperar(){ // RECUPERAR CONTRASEÑA
 		return false;
 	}
 	else{
-		alert("Sus nuevas credenciales se enviaron exitosamente, por favor revise su email")
-		location.href="index.php"
+		alert("Sus nuevas credenciales se enviaron exitosamente, por favor revise su email");
+		window.location="../index.php";
 	}
 }

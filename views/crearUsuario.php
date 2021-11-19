@@ -6,8 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
     <title>Crear Usuario</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
         <div class="container">
             
                 <div class="navbar-right">
-                    <a href="index.php" class="navbar-brand">Cerrar sesion</a>
+                    <a href="../index.php" class="navbar-brand">Cerrar sesion</a>
                 </div>
             </div>
         </div>
@@ -24,7 +24,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="text-center"> SINOVA <small>Crear Usuario</small></h1>
+                <h1 class="text-center"> SINOVA <small>Crear Usuario</small></h1>
                 </div>
             </div>
         </div>
@@ -33,7 +33,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-md-offset-4">
-                    <form name="formulario" class="well" action="php/insertar.php" method="POST">
+                    <form name="formulario" class="well" action="../controllers/insertar.php" method="POST">
                         <div class="form-group">
                             <label for="">Email</label>
                             <input type="email" class="form-control" placeholder="Digite correo SENA" id="correo" name="correo" required>
@@ -61,7 +61,7 @@
                             <label for="">Repita contraseña</label>
                             <input type="password" class="form-control"name="passw2" required>
                         </div>
-                        <button type="submit" class="btn btn-success btn-block" value="Crear" id="login" >Crear</button>
+                        <button type="submit" class="btn btn-success btn-block" value="Crear" id="crear" >Crear</button>
                         <input type="button" class="btn btn-danger btn-block" value="Cancelar" onclick="botonCancelarCrearUsuario()">
                         
                     </form>
@@ -74,6 +74,6 @@
     <footer id="footer">
         <p>Copyright SINAK, &copy; 2020</p>
     </footer>
-    <script src="botones.js"></script>
+    <script src="../js/botones.js"></script>
 </body>
 </html>

@@ -4,15 +4,15 @@
 <head>
     <meta charset="utf-8">
     <title>SINOVA| Descripción Novedad</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <nav class="navbar navbar-default">
         <div class="container">
             <div class="navbar-right">
-                <a href="index.php" class="navbar-brand">Cerrar sesion</a>
+                <a href="../index.php" class="navbar-brand">Cerrar sesion</a>
             </div>
         </div>
     </nav>
@@ -21,10 +21,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <h1 onclick="botonInicio()"><img src="images/logoblanco.png" id="imglogo" alt="Logo SENA"></span> SINOVA <small>CEET</small></h1>
+                    <h1 onclick="botonInicio()"><img src="../images/logoblanco.png" id="imglogo" alt="Logo SENA"></span> SINOVA <small>CEET</small></h1>
                 </div>
                 <div class="col-md-4 text-left">
-                    <h5 id="funcionario">Funcionario(a): Nestor Rodriguez</h5>
+                    <h5 id="funcionario">Funcionario(a): USER</h5>
                 </div>
             </div>
         </div>
@@ -93,12 +93,12 @@
                                 </tr>
                                 <tr>
                                     <td><strong>Documentos adjuntos</strong></td>
-                                    <td><a href="">Formato de novedad</a> </td>
+                                    <td><a href="">No hay documentos adjuntos</a> </td>
                                 </tr>
                                
                                 <tr>
                                     <td></td>
-                                    <td><img  src="images/imgpdf.png" alt="descargar" > <a href="reporte.php" onclick="descargar()">Descargar PDF</a>  </td>
+                                    <td><img  src="../images/imgpdf.png" alt="descargar" > <a href="../lib/reporte.php" onclick="descargar()">Descargar PDF</a>  </td>
                                 </tr>
                                 </table>
                               </div>
@@ -112,7 +112,7 @@
     <footer id="footer">
         <p>Copyright SINAK, &copy; 2020</p>
     </footer>
-    <script src="botones.js"></script>
+    <script src="../js/botones.js"></script>
 </body>
 
 </html>

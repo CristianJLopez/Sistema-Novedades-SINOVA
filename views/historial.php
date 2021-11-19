@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>SINOVA | Historial aprendiz</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 
 </head>
 
@@ -14,7 +14,7 @@
         <div class="container">
             
                 <div class="navbar-right">
-                    <a href="index.php" class="navbar-brand">Cerrar sesion</a>
+                    <a href="../index.php" class="navbar-brand">Cerrar sesion</a>
                 </div>
             </div>
         </div>
@@ -24,10 +24,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <h1 onclick="botonInicio()"><span><img src="images/logoblanco.png" id="imglogo" alt="Logo SENA"></span> SINOVA <small>CEET</small></h1>
+                    <h1 onclick="botonInicio()"><span><img src="../images/logoblanco.png" id="imglogo" alt="Logo SENA"></span> SINOVA <small>CEET</small></h1>
                 </div>
                 <div class="col-md-4 text-left">
-                    <h5 id="funcionario">Funcionario(a): Nestor Rodriguez</h5>
+                    <h5 id="funcionario">Funcionario(a): USER</h5>
                 </div>
             </div>
         </div>
@@ -68,19 +68,19 @@
                                     <td>Ago 12, 2020</td>
                                     <td>No portar el uniforme</td>
                                     <td>Royer Gonzales</td>
-                                    <td><a href="descripcion.html" class="btn btn-success">Ver</a></td>
+                                    <td><a href="descripcion.php" class="btn btn-success">Ver</a></td>
                                 </tr>
                                 <tr>
                                     <td>Dec 22, 2020</td>
                                     <td>No presenta evidencias de aprendizaje</td>
                                     <td>Nestor Rodriguez</td>
-                                    <td><a href="descripcion.html" class="btn btn-success">Ver</a></td>
+                                    <td><a href="descripcion.php" class="btn btn-success">Ver</a></td>
                                 </tr>
                                 <tr>
                                     <td>Feb 03, 2021</td>
                                     <td>Inasistencia no justificada</td>
                                     <td>Nubia Marcela Benitez</td>
-                                    <td><a href="descripcion.html" class="btn btn-success">Ver</a></td>
+                                    <td><a href="descripcion.php" class="btn btn-success">Ver</a></td>
                                 </tr>
                                
                             </table>
@@ -94,8 +94,8 @@
     <footer id="footer">
         <p>Copyright SINAK, &copy; 2020</p>
     </footer>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="botones.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/botones.js"></script>
 </body>
 
 </html>

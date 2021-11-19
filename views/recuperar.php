@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8">
     <title>SINOVA |Restablecer contraseña</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 </head>
 <body>
         <div class="container">
                 <p class="navbar-brand">SISTEMA DE NOVEDADES DEL APRENDIZ</p>
-                <img src="images/logosena.png" alt="" >
+                <img src="../images/logosena.png" alt="" >
         </div>
     </nav>
  
@@ -44,5 +44,5 @@
         <footer id="footer">
             <p>Copyright SINAK, &copy; 2020</p>
         </footer>
-    <script src="indexlogin.js"></script>
+    <script src="../js/indexlogin.js"></script>
 </body>

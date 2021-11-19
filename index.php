@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 
 <head>
@@ -31,7 +31,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-md-offset-4">
-                    <form action="php/login.php" id="login" name="formulario" class="well" method="POST">
+                    <form action="controllers/login.php" id="login" name="formulario" class="well" method="POST">
                         <div class="form-group">
                             <label for="">Email</label>
                             <input type="email" class="form-control" placeholder="Digite correo SENA" id="correo" name="correo" required>
@@ -43,7 +43,7 @@
                         <button type="submit" class="btn btn-warning btn-block"  name="ingresar"> Ingresar </button>
                     </form>
                     <div class="form-group text-center">
-                    <a href="recuperar.html" class="link-primary">¿Olvidaste tu contraseña?</a>
+                    <a href="views/recuperar.php" class="link-primary">¿Olvidaste tu contraseña?</a>
                     </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@
     <footer id="footer">
         <p>Copyright SINAK, &copy; 2020</p>
     </footer>
-    <script type="text/javascript" src="indexlogin.js"></script>
+    <script type="text/javascript" src="js/indexlogin.js"></script>
 </body>
 
 </html>

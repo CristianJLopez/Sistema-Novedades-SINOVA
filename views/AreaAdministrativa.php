@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
     <title>SINOVA | SUPERADMIN</title>
 
 </head>
@@ -16,7 +16,7 @@
         <div class="container">
             
                 <div class="navbar-right">
-                    <a href="index.php" class="navbar-brand">Cerrar sesion</a>
+                    <a href="../index.php" class="navbar-brand">Cerrar sesion</a>
                 </div>
             </div>
         </div>
@@ -26,7 +26,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <h1 onclick="botonInicio()"><span><img src="images/logoblanco.png" id="imglogo" alt="Logo SENA"></span> SINOVA <small>Administrar Software</small></h1>
+                    <h1 onclick="botonInicio()"><span><img src="../images/logoblanco.png" id="imglogo" alt="Logo SENA"></span> SINOVA <small>Administrar Software</small></h1>
                 </div>
                 <div class="col-md-4 text-left">
                     <h5 id="funcionario">Funcionario(a): SUPERADMIN</h5>
@@ -43,7 +43,7 @@
         <div class="container" >
             <div class="image-upload">
                 <label>
-                <a href="crearUsuario.php"><img id="imguser" src="images/usuario.png"/><p>Crear Usuario</p></a> 
+                <a href="crearUsuario.php"><img id="imguser" src="../images/usuario.png"/><p>Crear Usuario</p></a> 
                 </label>
                 
             </div>
@@ -61,7 +61,7 @@
         <div class="container" >
             <div class="image-upload">
                 <label for="file-input">
-                    <img id="imgcsv" src="images/upload.png"/> <a href=""><input id="file-input" type="file"/></a>
+                    <img id="imgcsv" src="../images/upload.png"/> <a href=""><input id="file-input" type="file"/></a>
                 </label>
                     
             </div>
@@ -75,8 +75,8 @@
     <footer id="footer">
         <p>Copyright SINAK, &copy; 2020</p>
     </footer>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="botones.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/botones.js"></script>
 </body>
 
 </html>
