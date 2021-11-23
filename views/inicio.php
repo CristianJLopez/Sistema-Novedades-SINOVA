@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 
 <head>
@@ -56,17 +56,18 @@
                                     <input type="text" class="form-control" placeholder="Buscar...">
                                 </div>
                             </div>
+                             
                             <table class="table table-striped table-hover">
                                         <th>Número de ficha</th>
                                         <th>Nombre del Programa</th>
                                         <th>Ingresar</th>
-                            
-                                <tr v-for="ficha in fichas">
-                                    <td>{{ficha.id}}</td>
-                                    <td>{{ficha.name}}</td>
+                                <?php  include_once "../controllers/consultaFichas.php"; foreach ($miConsulta as $clave => $valor): ?>
+                                <tr>
+                                    <td><?= $valor['numero_ficha'];?></td>
+                                    <td><?= $valor['nombre_programa'];?></td>
                                     <td><button class="btn btn-success" onclick="botonAprendices()">Ver</button></td>
                                 </tr>
-                                
+                                <?php endforeach; ?>
                             </table>
                         </div>
                     </div>

@@ -52,7 +52,8 @@ require('../models/conexion.php');
         	}
         }
         else{
-        	 echo "<script>alert('Error: usuario y/o clave incorrectos!!');
+        	 echo 
+              "<script>alert('Error: usuario y/o clave incorrectos!!');
                         window.location.href ='../index.php';
                         </script>";
         }
