@@ -65,15 +65,19 @@
                                     <th></th>
                                     <th></th>
                                 </tr>
-                                <tr v-for="aprendiz in aprendices">
-                                    <td>{{aprendiz.name}}</td>
-                                    <td>{{aprendiz.tipodoc}}</td>
-                                    <td>{{aprendiz.id}}</td>
-                                    <td>{{aprendiz.email}}</td>
+                                <?php  include_once "../controllers/consultaAprendices.php"; foreach ($miConsulta as $clave => $valor): ?>
+                                <tr>
+                                    <td><?= $valor['nombreAprendiz'];?></td>
+                                    <td><?= $valor['tipoDocumento'];?></td>
+                                    <td><?= $valor['numeroDocumento'];?></td>
+                                    <td><?= $valor['correo'];?></td>
+                                    
+                                
+                                    
                                     <td><a href="Novedades.php" class="btn btn-success">Agregar</a></td>
                                     <td><a href="historial.php" class="btn btn-primary">Ver historial</a></td>
                                 </tr>
-                    
+                                <?php endforeach; ?>
                             </table>
                         </div>
                     </div>

@@ -65,7 +65,7 @@
                                 <tr>
                                     <td><?= $valor['numero_ficha'];?></td>
                                     <td><?= $valor['nombre_programa'];?></td>
-                                    <td><button class="btn btn-success" onclick="botonAprendices()">Ver</button></td>
+                                    <td><button class="btn btn-success" onclick="botonAprendices()" value="<?=$valor['id_ficha'];?>">Ver</button></td>
                                 </tr>
                                 <?php endforeach; ?>
                             </table>
