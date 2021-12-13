@@ -56,7 +56,7 @@
                                     <input type="text" class="form-control" placeholder="Buscar...">
                                 </div>
                             </div>
-                             
+                             <form method="post" action="Aprendices.php">
                             <table class="table table-striped table-hover">
                                         <th>Número de ficha</th>
                                         <th>Nombre del Programa</th>
@@ -65,10 +65,11 @@
                                 <tr>
                                     <td><?= $valor['numero_ficha'];?></td>
                                     <td><?= $valor['nombre_programa'];?></td>
-                                    <td><button class="btn btn-success" onclick="botonAprendices()" value="<?=$valor['id_ficha'];?>">Ver</button></td>
+                                    <td><button class="btn btn-success" type="submit" value="<?=$valor['id_ficha'];?>" name="btnficha">Ver</button></td>
                                 </tr>
                                 <?php endforeach; ?>
                             </table>
+                            </form>
                         </div>
                     </div>
                 </div>

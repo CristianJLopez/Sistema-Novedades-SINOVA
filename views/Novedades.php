@@ -51,33 +51,34 @@
                             <h3 class="panel-title">Agregar Novedad</h3>
                         </div>
                         <div class="panel-body">
-                            <form action="../controllers/mensaje.php"  method="POST">
+                            <form action="../controllers/agregarNovedad.php"  method="POST">
                                 <div class="form-group">
                                     <label>Asunto novedad</label>
-                                    <input type="text" class="form-control" name="asunto" placeholder="Describa la novedad en maximo 5 palabras">
+                                    <input type="text" class="form-control" name="asunto" id="asunto" placeholder="Describa la novedad en maximo 5 palabras">
                                 </div>
                                 <div class="form-group">
                                     <label>Descripción Novedad</label>
-                                    <textarea type="text" class="form-control" name="descripcion" placeholder="Describa los hechos en maximo 500 palabras"></textarea>
+                                    <textarea type="text" class="form-control" name="descripcion" id="descripcion" placeholder="Describa los hechos en maximo 500 palabras"></textarea>
                                 </div>
                                 <div class="form-group">
                                     <label>
-                                        <input type="checkbox" > Academica  
-                                        <input type="checkbox" > Disciplinaria                                     
+                                        <input type="checkbox" value="1" name="tipoNovedad" id="tipoNovedad" > Académica  
+                                        <input type="checkbox" value="2" name="tipoNovedad" id="tipoNovedad"  > Disciplinaria                                     
                                     </label>
                                 </div>
                                 <div class="form-group">
-                                    <label for="fecha">Fecha</label>
-                                    <input type="date" class="form-control">
+                                    <label for="fecha" id="fecha" name="fecha">Fecha</label>
+                                    <input type="date" id="fecha" name="fecha" class="form-control">
                                 </div>
 
                                 <div class="form-group">
                                     <label for="adjuntarArchivo">Adjuntar archivo</label>
-                                    <input type="file" id="adjuntarArchivo">
+                                    <input type="file" id="archivo" name="archivo">
                                     <p class="help-block">Recomendado en formato PDF</p>
                                 </div>
+                                <button type="submit" class="btn btn-info" >He terminado!</button>
                             </form>
-                            <input type="submit" class="btn btn-info" value="He terminado!" onclick="terminaNovedad()">
+                            
                         </div>
                     </div>
                 </div>

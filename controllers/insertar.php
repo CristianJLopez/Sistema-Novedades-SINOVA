@@ -27,6 +27,5 @@ if (mysqli_query($conexion, $sql)) {
       echo "Error: " . $sql . "<br>" . mysqli_error($conexion);
 }
 mysqli_close($conexion);
-?>
 
 ?>

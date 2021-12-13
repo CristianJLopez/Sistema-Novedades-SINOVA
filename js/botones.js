@@ -1,6 +1,4 @@
-function botonAprendices(){
-	location.href="Aprendices.php"
-}
+
 function botonInicio(){
 	location.href="../views/inicio.php"
 }

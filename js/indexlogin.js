@@ -27,7 +27,7 @@ function login(){
 		return false;
 	}
 }*/
-
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 function recuperar(){ // RECUPERAR CONTRASEÑA
 	let correo = document.formularioo.correoo.value
@@ -48,3 +48,6 @@ function recuperar(){ // RECUPERAR CONTRASEÑA
 		window.location="../index.php";
 	}
 }
+ function alerta(){
+	swal("Hello world!");
+ }

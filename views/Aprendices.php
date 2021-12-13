@@ -56,6 +56,9 @@
                                     <input type="text" class="form-control" placeholder="Buscar...">
                                 </div>
                             </div>
+                            
+                                
+                            <form action="historial.php" method="post">
                             <table class="table table-striped table-hover">
                                 <tr>
                                     <th>Nombre</th>
@@ -65,20 +68,20 @@
                                     <th></th>
                                     <th></th>
                                 </tr>
-                                <?php  include_once "../controllers/consultaAprendices.php"; foreach ($miConsulta as $clave => $valor): ?>
+                                <?php  include_once "../controllers/consultaAprendices.php"; foreach ($resultado as $clave => $valor): ?>
                                 <tr>
                                     <td><?= $valor['nombreAprendiz'];?></td>
                                     <td><?= $valor['tipoDocumento'];?></td>
                                     <td><?= $valor['numeroDocumento'];?></td>
                                     <td><?= $valor['correo'];?></td>
                                     
-                                
                                     
-                                    <td><a href="Novedades.php" class="btn btn-success">Agregar</a></td>
-                                    <td><a href="historial.php" class="btn btn-primary">Ver historial</a></td>
+                                    <td><a class="btn btn-success" href="Novedades.php"  >Agregar</a></td>
+                                    <td><button type="submit" class="btn btn-primary" name="btnidaprendiz" value="<?= $valor['idAprendiz'];?>" >Ver historial</button></td>
                                 </tr>
                                 <?php endforeach; ?>
                             </table>
+                            </form>
                         </div>
                     </div>
                 </div>

@@ -1,7 +1,6 @@
 <?php
 require('../models/conexion.php');
-    
-    
+   
     if(isset($_POST['ingresar'])){
 
     // 3. Variables $_POST[]
@@ -10,7 +9,7 @@ require('../models/conexion.php');
     $securepassw = sha1($c);
 
     if($u == "" || $_POST['passw'] == null){ // Validamos que ningún campo quede vacío
-        echo "<script>alert('Error: usuario y/o clave vacios!!');</script>"; // Se utiliza Javascript dentro de PHP
+        echo "<script>alert('Error: usuario y/o clave vacios!!');</script>"; 
     }else{
         // 4. Cadena de SQL
         $sql = "SELECT * FROM Usuarios WHERE Correo = '$u' AND Password = '$securepassw'";
@@ -24,19 +23,7 @@ require('../models/conexion.php');
             
             $filas = mysqli_num_rows($consulta);
             $fila = mysqli_fetch_assoc($consulta);
-            // 7. Comparo cantidad de registros encontrados
-           /* if($filas == 0){
-                
-                echo "<script>
-                        alert('Error: usuario y/o clave incorrectos!!');
-                        window.location.href ='../index.php';
-                        </script>";
-                
-                
-            }else{
-                header('location:../views/inicio.php'); // Si está todo correcto redirigimos a otra página
-            }*/
-
+           
 
             if ($filas >= 1){
     
@@ -52,10 +39,12 @@ require('../models/conexion.php');
         	}
         }
         else{
-        	 echo 
+        	echo 
               "<script>alert('Error: usuario y/o clave incorrectos!!');
                         window.location.href ='../index.php';
-                        </script>";
+                        </script>"; 
+                         exit;;
+                         
         }
         }
     }

@@ -64,25 +64,14 @@
                                     <th>Instructor</th>
                                     <th></th>
                                 </tr>
+                                <?php  include_once "../controllers/historialNovedades.php"; foreach ($resultado as $clave => $valor): ?>
                                 <tr>
-                                    <td>Ago 12, 2020</td>
-                                    <td>No portar el uniforme</td>
-                                    <td>Royer Gonzales</td>
-                                    <td><a href="descripcion.php" class="btn btn-success">Ver</a></td>
+                                    <td><?= $valor['fecha'];?></td>
+                                    <td><?= $valor['asunto'];?></td>
+                                    <td><?= $valor['tipoNovedad'];?></td>
+                                    <td><a href="descripcion.php" class="btn btn-success" value="<?= $valor['idNovedad'];?>">Ver</a></td>
                                 </tr>
-                                <tr>
-                                    <td>Dec 22, 2020</td>
-                                    <td>No presenta evidencias de aprendizaje</td>
-                                    <td>Nestor Rodriguez</td>
-                                    <td><a href="descripcion.php" class="btn btn-success">Ver</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Feb 03, 2021</td>
-                                    <td>Inasistencia no justificada</td>
-                                    <td>Nubia Marcela Benitez</td>
-                                    <td><a href="descripcion.php" class="btn btn-success">Ver</a></td>
-                                </tr>
-                               
+                                <?php endforeach; ?>
                             </table>
                         </div>
                     </div>
