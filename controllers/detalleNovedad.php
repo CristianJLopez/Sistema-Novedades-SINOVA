@@ -7,8 +7,8 @@ if (!$conexion) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$idAprendiz=$_POST['btnidaprendiz'];
-$sql= "SELECT * FROM  novedades inner join usuarios on novedades.idUsuario= usuarios.idUsuario WHERE id_aprendiz='$idAprendiz' "; 
+$idNovedad=$_POST['btnidnovedad'];
+$sql= "SELECT * FROM novedades inner join aprendices ON novedades.id_aprendiz = aprendices.idAprendiz inner join fichas ON aprendices.id_ficha = fichas.id_ficha inner join tipoNovedad on novedades.tipoNovedad = tipoNovedad.idTipoNovedad WHERE novedades.idNovedad='$idNovedad'";
 
 if (mysqli_query($conexion, $sql)) {
     $resultado = $conexion->query($sql);
@@ -22,4 +22,3 @@ if (mysqli_query($conexion, $sql)) {
 mysqli_close($conexion);
 
 ?>
-

@@ -57,6 +57,7 @@
                                     <input type="text" class="form-control" placeholder="Buscar...">
                                 </div>
                             </div>
+                            <form action="descripcion.php" method="post">
                             <table class="table table-striped table-hover">
                                 <tr>
                                     <th>Fecha </th>
@@ -68,11 +69,12 @@
                                 <tr>
                                     <td><?= $valor['fecha'];?></td>
                                     <td><?= $valor['asunto'];?></td>
-                                    <td><?= $valor['tipoNovedad'];?></td>
-                                    <td><a href="descripcion.php" class="btn btn-success" value="<?= $valor['idNovedad'];?>">Ver</a></td>
+                                    <td><?= $valor['Nombre'];?></td>
+                                    <td><button type="submit" class="btn btn-success" name="btnidnovedad" value="<?= $valor['idNovedad'];?>">Ver</button></td>
                                 </tr>
                                 <?php endforeach; ?>
                             </table>
+                            </form>
                         </div>
                     </div>
                 </div>

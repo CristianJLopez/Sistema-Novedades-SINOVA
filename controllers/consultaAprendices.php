@@ -12,7 +12,7 @@ if (!$conexion) {
 
 
 $ficha=$_POST['btnficha'];
-$sql= "SELECT * FROM  aprendices AS A INNER JOIN documentos AS D ON A.tipoDocumento = D.idTipoDocumento  WHERE id_ficha='$ficha'"; 
+$sql= "SELECT * FROM aprendices INNER JOIN documentos ON aprendices.tipoDocumento = documentos.idTipoDocumento INNER JOIN fichas ON aprendices.id_ficha = fichas.id_ficha WHERE aprendices.id_ficha='$ficha'"; 
 
 if (mysqli_query($conexion, $sql)) {
     $resultado = $conexion->query($sql);

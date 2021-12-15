@@ -44,36 +44,37 @@
                     </div>   
                 </div>
                 <div class="col-md-9">
+                <?php  include_once "../controllers/detalleNovedad.php"; foreach ($resultado as $clave => $valor): ?>
                     <div class="panel panel-default">
                         <div class="panel-heading main-color-bg">
-                            <h3 class="panel-title">Descripción de la Novedad (Nombre aprendiz)(1964701)</h3>
+                            <h3 class="panel-title">Descripción de la Novedad (<?= $valor['nombreAprendiz'];?>)(<?= $valor['numero_ficha'];?>)</h3>
                         </div>
                         <div class="panel-body">
                             <div class="table-responsive">
                                 <table class="table">
                                   <tr>
                                       <td> <strong>Tipo de novedad</strong></td>
-                                      <td>Academica</td>
+                                      <td><?= $valor['nombreNovedad'];?></td>
                                   </tr>
                                   <tr>
                                     <td><strong>Nombre del aprendiz</strong></td>
-                                    <td>Andrey Chacon Cespedes</td>
+                                    <td><?= $valor['nombreAprendiz'];?></td>
                                 </tr>
                                 <tr>
                                     <td><strong>Numero de documento</strong></td>
-                                    <td>1033730164</td>
+                                    <td><?= $valor['numeroDocumento'];?></td>
                                 </tr>
                                 <tr>
                                     <td><strong>Correo electronico</strong></td>
-                                    <td>yandre1@misena.edu.co</td>
+                                    <td><?= $valor['correo'];?></td>
                                 </tr>
                                 <tr>
                                     <td><strong>Numero de ficha</strong></td>
-                                    <td>1964701</td>
+                                    <td><?= $valor['numero_ficha'];?></td>
                                 </tr>
                                 <tr>
                                     <td><strong>Nombre del programa</strong></td>
-                                    <td>Analisis y desarrollo de sistemas de informacion</td>
+                                    <td><?= $valor['nombre_programa'];?></td>
                                 </tr>
                                 <tr>
                                     <td><strong>Modalidad</strong></td>
@@ -85,11 +86,11 @@
                                 </tr>
                                 <tr>
                                     <td><strong>Fecha de la novedad</strong></td>
-                                    <td>29/01/2021</td>
+                                    <td><?= $valor['fecha'];?></td>
                                 </tr>
                                 <tr>
                                     <td><strong>Novedad</strong></td>
-                                    <td>El señor no presenta a tiempo las evidencias de aprendizaje</td>
+                                    <td><?= $valor['asunto'];?></td>
                                 </tr>
                                 <tr>
                                     <td><strong>Documentos adjuntos</strong></td>
@@ -101,6 +102,7 @@
                                     <td><img  src="../images/imgpdf.png" alt="descargar" > <a href="../lib/reporte.php" onclick="descargar()">Descargar PDF</a>  </td>
                                 </tr>
                                 </table>
+                                <?php endforeach; ?>
                               </div>
                         </div>
                     </div>

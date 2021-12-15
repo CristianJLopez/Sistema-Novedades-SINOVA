@@ -45,10 +45,13 @@
                         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
                 </div>
+                
                 <div class="col-md-9">
+                
                     <div class="panel panel-default">
                         <div class="panel-heading main-color-bg">
-                            <h3 class="panel-title">ANALISIS Y DESARROLLO DE SISTEMAS DE INFORMACION (1964701)</h3>
+                        
+                            <h3 class="panel-title">Aprendices asociados a la ficha</h3>
                         </div>
                         <div class="panel-body" id="app">
                             <div class="row">
@@ -57,7 +60,7 @@
                                 </div>
                             </div>
                             
-                                
+                            
                             <form action="historial.php" method="post">
                             <table class="table table-striped table-hover">
                                 <tr>
@@ -81,6 +84,7 @@
                                 </tr>
                                 <?php endforeach; ?>
                             </table>
+                            
                             </form>
                         </div>
                     </div>
